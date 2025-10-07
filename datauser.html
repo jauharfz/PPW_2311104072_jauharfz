@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data User / Registrasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+        }
+        table td {
+            padding: 8px;
+            vertical-align: top;
+        }
+        input[type="text"],
+        input[type="date"],
+        select {
+            padding: 5px;
+            width: 250px; /* Disesuaikan agar lebih rapi */
+            box-sizing: border-box;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        input[type="reset"] {
+            background-color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+<h2>Form Registrasi</h2>
+<form>
+    <table>
+        <tr>
+            <td>Nama Lengkap :</td>
+            <td><input type="text" name="fullname" /></td>
+        </tr>
+        <tr>
+            <td>NIK :</td>
+            <td><input type="text" name="NIK" /></td>
+        </tr>
+        <tr>
+            <td>Alamat :</td>
+            <td><input type="text" name="alamat" /></td>
+        </tr>
+        <tr>
+            <td>Tempat Lahir :</td>
+            <td><input type="text" name="tempat" /></td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir :</td>
+            <td><input type="date" name="tanggal_lahir" /></td>
+        </tr>
+        <tr>
+            <td>Handphone :</td>
+            <td><input type="text" name="hp" /></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin :</td>
+            <td>
+                <select name="jk">
+                    <option value="">-- Pilih --</option>
+                    <option value="L">Laki-laki</option>
+                    <option value="P">Perempuan</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Agama :</td>
+            <td>
+                <input type="radio" name="agama" value="Islam" id="islam" />
+                <label for="islam">Islam</label><br />
+                <input type="radio" name="agama" value="Kristen" id="kristen" />
+                <label for="kristen">Kristen</label><br />
+                <input type="radio" name="agama" value="Katolik" id="katolik" />
+                <label for="katolik">Katolik</label><br />
+                <input type="radio" name="agama" value="Hindu" id="hindu" />
+                <label for="hindu">Hindu</label><br />
+                <input type="radio" name="agama" value="Buddha" id="buddha" />
+                <label for="buddha">Buddha</label><br />
+                <input type="radio" name="agama" value="Konghucu" id="konghucu" />
+                <label for="konghucu">Konghucu</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Daftar" />
+                <input type="reset" value="Reset" />
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
